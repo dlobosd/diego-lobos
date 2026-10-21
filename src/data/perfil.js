@@ -1,29 +1,137 @@
-// EDITA ESTE ARCHIVO CON TUS DATOS. Los textos actuales son marcadores, no datos reales.
-// Deja email, github o linkedin vacíos para ocultar sus enlaces.
 export const perfil = {
-  nombre: "Tu nombre",
-  profesion: "Tu profesión / especialidad",
-  disponibilidad: "Tu disponibilidad laboral",
-  ubicacion: "Tu ciudad, país",
-  enfoque: "Tu área de especialidad",
-  idiomas: "Idioma · Nivel",
-  sobreMi: "Escribe aquí quién eres, qué haces y qué puedes aportar. Cuenta en unas pocas líneas qué te interesa de tu trabajo y qué tipo de oportunidad estás buscando.",
-  email: "",
-  github: "",
-  linkedin: "",
-  contacto: "¿Tienes una oportunidad o un proyecto en mente? Me gustaría conocer más.",
-  experiencia: [
-    { periodo: "Inicio — Actualidad", cargo: "Tu cargo más reciente", empresa: "Empresa / Organización", descripcion: "Describe tu responsabilidad principal y un resultado concreto de tu trabajo. Usa cifras solo si puedes respaldarlas.", etiquetas: ["Competencia", "Herramienta"] },
-    { periodo: "Inicio — Fin", cargo: "Una experiencia anterior", empresa: "Empresa / Proyecto independiente", descripcion: "Cuenta qué hiciste, con quién colaboraste y qué aprendiste. También puedes incluir prácticas o voluntariados.", etiquetas: ["Competencia", "Colaboración"] }
+  "nombre": "Diego Tomás Lobos Díaz",
+  "profesion": "Estudiante de Ingeniería Civil Informática",
+  "disponibilidad": "Desarrollo de software · Seguridad de aplicaciones",
+  "ubicacion": "Santiago, Chile",
+  "enfoque": "Software, automatización y ciberseguridad",
+  "idiomas": "Español nativo · Inglés avanzado",
+  "sobreMi": "Soy estudiante avanzado de Ingeniería Civil Informática en la Universidad Andrés Bello. Desarrollo aplicaciones de escritorio, sistemas de gestión y soluciones de visión computacional, con interés en ingeniería de software, automatización y ciberseguridad. Tengo experiencia colaborando en proyectos técnicos.",
+  "email": "",
+  "github": "https://github.com/dlobosd",
+  "linkedin": "",
+  "contacto": "Puedes conocer mis proyectos públicos y mi trabajo en GitHub.",
+  "experiencia": [
+    {
+      "periodo": "2025",
+      "cargo": "Apoyo en talleres de programación",
+      "empresa": "Universidad Andrés Bello",
+      "descripcion": "Participación en actividades prácticas de programación.",
+      "etiquetas": [
+        "Programación",
+        "Colaboración"
+      ]
+    },
+    {
+      "periodo": "2022",
+      "cargo": "Head Coach",
+      "empresa": "EclipseGaming",
+      "descripcion": "Análisis competitivo y coordinación de equipos de esports.",
+      "etiquetas": [
+        "Análisis",
+        "Coordinación de equipos"
+      ]
+    },
+    {
+      "periodo": "2021",
+      "cargo": "Assistant Coach",
+      "empresa": "Deliverance Esports",
+      "descripcion": "Apoyo en análisis competitivo y coordinación de equipos de esports.",
+      "etiquetas": [
+        "Esports",
+        "Trabajo en equipo"
+      ]
+    }
   ],
-  proyectos: [
-    { nombre: "Tu primer proyecto", categoria: "ÁREA / DISCIPLINA", descripcion: "Explica el problema, tu aporte y el resultado. Enlaza el repositorio o una muestra de tu trabajo.", tecnologias: ["Herramienta", "Tecnología"], url: "" },
-    { nombre: "Otro trabajo destacado", categoria: "ÁREA / DISCIPLINA", descripcion: "Incluye un trabajo personal, académico o profesional que muestre lo que sabes hacer.", tecnologias: ["Herramienta", "Metodología"], url: "" }
+  "proyectos": [
+    {
+      "nombre": "Beely",
+      "categoria": "TECNOLOGÍA DEPORTIVA · 2026 · CÓDIGO PRIVADO",
+      "descripcion": "Aplicación de escritorio para gestionar rendimiento, entrenamientos, cargas, tendencias, jugadores y análisis de partidos. Pipeline de visión computacional en Python para tracking, identidad de futbolistas y un motor experimental de eventos. Incluye autenticación y permisos por rol (RBAC).",
+      "tecnologias": [
+        "Python",
+        "TypeScript",
+        "React",
+        "Tauri",
+        "Node.js",
+        "PostgreSQL",
+        "Prisma"
+      ],
+      "url": ""
+    },
+    {
+      "nombre": "Minimarket Antucayen",
+      "categoria": "GESTIÓN COMERCIAL · PROYECTO UNIVERSITARIO COLABORATIVO",
+      "descripcion": "Sistema de escritorio con punto de venta, inventario transaccional, proveedores, facturación, OCR, reportes y permisos por rol. Desarrollado con Java, Swing/FlatLaf y MariaDB, con Maven y pruebas JUnit.",
+      "tecnologias": [
+        "Java",
+        "Swing / FlatLaf",
+        "MariaDB",
+        "Maven",
+        "JUnit"
+      ],
+      "url": ""
+    },
+    {
+      "nombre": "Folio",
+      "categoria": "PLANTILLA GRATUITA · 2026",
+      "descripcion": "Plantilla de currículum y portafolio para estudiantes y personas que quieren mostrar sus proyectos. Desarrollada con Astro, HTML, CSS y JavaScript; personalizable mediante un archivo de datos y publicable en GitHub Pages.",
+      "tecnologias": [
+        "Astro",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "GitHub Pages"
+      ],
+      "url": "https://github.com/dlobosd/folio"
+    },
+    {
+      "nombre": "World of Warcraft Addons",
+      "categoria": "PROYECTOS PERSONALES · 2021–2024",
+      "descripcion": "Desarrollo de addons en Lua usando la API de World of Warcraft, lógica orientada a eventos y herramientas para el juego.",
+      "tecnologias": [
+        "Lua",
+        "API de World of Warcraft",
+        "Eventos"
+      ],
+      "url": ""
+    }
   ],
-  formacion: [
-    { periodo: "Inicio — Fin", titulo: "Tu título / carrera", institucion: "Universidad o institución" },
-    { periodo: "Año", titulo: "Curso o certificación", institucion: "Institución que lo imparte" }
+  "formacion": [
+    {
+      "periodo": "En curso",
+      "titulo": "Ingeniería Civil Informática",
+      "institucion": "Universidad Andrés Bello (UNAB)"
+    },
+    {
+      "periodo": "2026 · En curso",
+      "titulo": "Formación en Python, SQL, Pandas y análisis de datos",
+      "institucion": "GCI World / Matsuo-Iwasawa Laboratory, The University of Tokyo"
+    },
+    {
+      "periodo": "Pendiente de confirmar",
+      "titulo": "EF SET · Resultado y certificado pendientes",
+      "institucion": "Inglés avanzado: C1 autoevaluado; certificación pendiente."
+    }
   ],
-  habilidades: ["Tu habilidad principal", "Herramienta de trabajo", "Comunicación", "Trabajo en equipo", "Otra competencia"]
+  "habilidades": [
+    "Python",
+    "TypeScript",
+    "JavaScript",
+    "Java",
+    "SQL",
+    "Lua",
+    "HTML/CSS",
+    "React",
+    "Node.js",
+    "Astro",
+    "Tauri",
+    "Prisma",
+    "PostgreSQL",
+    "MariaDB",
+    "MongoDB",
+    "Git/GitHub",
+    "Docker",
+    "Pandas",
+    "Claude Code"
+  ]
 };
-
