@@ -15,7 +15,7 @@
 @media print{.sidebar{display:none!important}main{margin:0;padding:0}.job,.study{display:block}.tags>span{color:#444;border-color:#ccc}}
 .template-credit{display:block;margin-top:4px;font-size:10px;color:var(--muted);line-height:1.6}
 
-.profile-photo{overflow:hidden;padding:0;background:var(--panel)}.profile-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 35%}.project-mockup{position:relative;overflow:hidden;background:var(--panel)}.project-mockup img{position:absolute;max-width:none;height:auto;display:block}.mockup-0{aspect-ratio:652/416}.mockup-0 img{width:235.583%;left:-135.583%;top:-22.596%}.mockup-1{aspect-ratio:842/461}.mockup-1 img{width:182.423%;left:-76.96%;top:-122.126%}@media print{.project-mockup{display:none}}
+.profile-photo{overflow:hidden;padding:0;background:var(--panel)}.profile-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 35%}.project-mockup{position:relative;overflow:hidden;background:var(--panel)}.project-mockup img{position:absolute;max-width:none;height:auto;display:block}.mockup-0{aspect-ratio:842/461}.mockup-0 img{width:235.583%;left:-135.583%;top:-26.332%}.mockup-1{aspect-ratio:842/461}.mockup-1 img{width:182.423%;left:-76.96%;top:-122.126%}@media print{.project-mockup{display:none}}
 
 .hero-intro{display:grid;grid-template-columns:minmax(0,1fr) clamp(150px,19vw,240px);align-items:start;gap:30px}
 .hero-portrait{width:100%;aspect-ratio:1;border-radius:50%;overflow:hidden;align-self:start;margin-top:60px;border:7px solid var(--bg);outline:1px solid var(--line);background:var(--panel);box-shadow:0 12px 35px #0000000d}
