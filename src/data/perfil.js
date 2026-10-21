@@ -22,7 +22,7 @@ export const perfil = {
       ]
     },
     {
-      "periodo": "",
+      "periodo": "2024",
       "cargo": "Ayudante de Cálculo I y II",
       "empresa": "Ayudantías académicas",
       "descripcion": "Apoyo a estudiantes de los cursos de Cálculo I y Cálculo II.",
@@ -105,7 +105,8 @@ export const perfil = {
         "Eventos",
         "POO"
       ],
-      "url": ""
+      "url": "https://www.curseforge.com/wow/addons/combat-analizer/preview",
+      "enlaceTexto": "Ver addons ↗"
     }
   ],
   "formacion": [

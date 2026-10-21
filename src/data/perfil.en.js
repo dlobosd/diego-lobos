@@ -22,7 +22,7 @@ export const perfilEn = {
       ]
     },
     {
-      "periodo": "",
+      "periodo": "2024",
       "cargo": "Teaching Assistant — Calculus I and II",
       "empresa": "Academic teaching support",
       "descripcion": "Supported students in Calculus I and Calculus II courses.",
@@ -105,7 +105,8 @@ export const perfilEn = {
         "Events",
         "OOP"
       ],
-      "url": ""
+      "url": "https://www.curseforge.com/wow/addons/combat-analizer/preview",
+      "enlaceTexto": "View addons ↗"
     }
   ],
   "formacion": [
