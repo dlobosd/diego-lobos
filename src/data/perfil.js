@@ -1,5 +1,5 @@
 export const perfil = {
-  "nombre": "Diego Tomás Lobos Díaz",
+  "nombre": "Diego Lobos",
   "profesion": "Estudiante de Ingeniería Civil Informática",
   "disponibilidad": "Desarrollo de software · Seguridad de aplicaciones",
   "ubicacion": "Santiago, Chile",
@@ -23,22 +23,13 @@ export const perfil = {
     },
     {
       "periodo": "2022",
-      "cargo": "Head Coach",
-      "empresa": "EclipseGaming",
-      "descripcion": "Análisis competitivo y coordinación de equipos de esports.",
+      "cargo": "Guild Leader and Raid Officer",
+      "empresa": "World of Warcraft · United States",
+      "descripcion": "Liderazgo de una guild y coordinación de raids en una comunidad de Estados Unidos. Toda la comunicación y las conversaciones se realizaron en inglés.",
       "etiquetas": [
-        "Análisis",
-        "Coordinación de equipos"
-      ]
-    },
-    {
-      "periodo": "2021",
-      "cargo": "Assistant Coach",
-      "empresa": "Deliverance Esports",
-      "descripcion": "Apoyo en análisis competitivo y coordinación de equipos de esports.",
-      "etiquetas": [
-        "Esports",
-        "Trabajo en equipo"
+        "Liderazgo",
+        "Coordinación de equipos",
+        "Comunicación en inglés"
       ]
     }
   ],
@@ -87,7 +78,7 @@ export const perfil = {
     {
       "nombre": "World of Warcraft Addons",
       "categoria": "PROYECTOS PERSONALES · 2021–2024",
-      "descripcion": "Desarrollo de addons en Lua usando la API de World of Warcraft, lógica orientada a eventos y herramientas para el juego.",
+      "descripcion": "Desarrollo de addons en Lua usando la API de World of Warcraft, lógica orientada a eventos y herramientas para el juego. También publico mis addons en CurseForge.",
       "tecnologias": [
         "Lua",
         "API de World of Warcraft",
