@@ -1,0 +1,50 @@
+---
+import { perfil } from '../data/perfil.js';
+import { perfilEn } from '../data/perfil.en.js';
+const { lang = 'es' } = Astro.props;
+const english = lang === 'en';
+const p = english ? perfilEn : perfil;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const t = (es, en) => english ? en : es;
+import '../styles/global.css';
+const safeURL = (value) => { try { const u = new URL(value); return ['https:', 'http:'].includes(u.protocol) ? u.href : null; } catch { return null; } };
+const email = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(p.email) ? p.email : null;
+const initials = p.nombre.trim().split(/\s+/).slice(0,2).map(word => word[0]).join('');
+---
+<!doctype html>
+<html lang={lang} data-theme="light">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="description" content={`${p.nombre} — ${p.profesion}. ${p.sobreMi}`}/>
+<title>{p.nombre} · {t('Currículum', 'Résumé')}</title>
+<script is:inline>
+try { document.documentElement.dataset.theme = localStorage.getItem('cv-astro-theme') === 'dark' ? 'dark' : 'light'; } catch {}
+</script>
+</head>
+<body>
+<a class="skip" href="#inicio">{t("Ir al contenido", "Skip to content")}</a>
+<aside class="sidebar"><a class="brand" href="#inicio" aria-label={t("Inicio", "Home")}>folio<span class="accent">.</span></a><small class="credit">made by diego lobos</small><div class="identity"><div class="avatar profile-photo"><img src={`${import.meta.env.BASE_URL.replace(/\/$/, "")}/images/diego-lobos.png`} alt="Diego Lobos" width="76" height="76" /></div><p class="name">{p.nombre}</p><p class="muted">{p.profesion}</p></div><nav aria-label={t("Navegación principal", "Main navigation")}><a href="#inicio">{t("Sobre mí", "About me")}</a><a href="#proyectos">{t("Proyectos", "Projects")}</a><a href="#experiencia">{t("Experiencia", "Experience")}</a><a href="#formacion">{t("Formación", "Education")}</a><a href="#contacto">{t("Contacto", "Contact")}</a></nav><div class="sidebar-bottom"><button id="theme" class="theme" aria-label={t("Activar tema oscuro", "Enable dark theme")} aria-pressed="false">◐ <span>{t("Cambiar tema", "Change theme")}</span></button></div></aside>
+<main><header class="topbar"><span>{t("CURRÍCULUM & PORTAFOLIO", "RÉSUMÉ & PORTFOLIO")}</span><div class="header-actions"><nav class="language-switch" aria-label={t("Idioma del currículum", "Résumé language")}><a href={`${base}/`} lang="es" hreflang="es" aria-current={!english ? "page" : undefined}>ES</a><a href={`${base}/en/`} lang="en" hreflang="en" aria-current={english ? "page" : undefined}>EN</a></nav><button id="print" type="button">{t("Guardar CV / PDF ↓", "Save résumé / PDF ↓")}</button></div></header>
+<section id="inicio" class="hero">
+<div class="hero-intro"><div class="hero-copy"><p class="eyebrow"><span class="dot"></span> {p.disponibilidad}</p><h1>{t("Hola, soy", "Hi, I’m")}<br/>{p.nombre}<span class="accent">.</span></h1><p class="hero-role">{p.profesion}</p><p class="intro">{p.sobreMi}</p><div class="hero-actions"><a class="button" href="#contacto">{t("Conversemos ↗", "Let’s talk ↗")}</a><a href="#proyectos" class="text-link">{t("Explorar mis proyectos ↓", "Explore my projects ↓")}</a></div></div>
+<div class="hero-portrait"><img src={`${import.meta.env.BASE_URL.replace(/\/$/, "")}/images/diego-lobos.png`} alt={t("Retrato de Diego Lobos", "Portrait of Diego Lobos")} width="240" height="240" /></div></div>
+<div class="facts"><div><span>{t("UBICACIÓN", "LOCATION")}</span><p>{p.ubicacion}</p></div><div><span>{t("ENFOQUE", "FOCUS")}</span><p>{p.enfoque}</p></div><div><span>{t("IDIOMAS", "LANGUAGES")}</span><p>{p.idiomas}</p></div></div>
+</section>
+<section id="proyectos"><div class="section-heading"><p class="eyebrow">{t("01 / TRABAJO SELECCIONADO", "01 / SELECTED WORK")}</p><h2>{t("Construyendo software útil", "Building useful software")}<span class="accent">.</span></h2></div><div class="projects">{p.proyectos.map((project, i) => <article class="project">{i < 2 ? <div class={`project-mockup mockup-${i}`}><img src={`${import.meta.env.BASE_URL.replace(/\/$/, "")}/images/proyectos-mockup.png`} alt={i === 0 ? t("Mockup de Beely: análisis de fútbol con visión computacional", "Beely mockup: computer vision football analysis") : t("Mockup del panel de gestión de Supermercado Antucayen", "Supermercado Antucayen management dashboard mockup")} width="1536" height="1024" loading="lazy" /></div> : <div class={`project-cover ${project.nombre === "Folio" ? "folio-cover" : "wow-cover"}`}>{project.nombre === "Folio" ? <span class="folio-wordmark" role="img" aria-label={t("Logo de Folio", "Folio logo")}>folio<span>.</span></span> : <img src={`${import.meta.env.BASE_URL.replace(/\/$/, "")}/images/world-of-warcraft.png`} alt="World of Warcraft" width="1600" height="900" loading="lazy" />}</div>}<div class="project-body"><p class="eyebrow">{project.categoria}</p><h3>{project.nombre}</h3><p class="muted">{project.descripcion}</p><div class="tags">{project.tecnologias.map(tag => <span>{tag}</span>)}</div>{project.estado ? <span class="project-status">{project.estado}</span> : safeURL(project.url) && <a class="project-link" href={safeURL(project.url)} target="_blank" rel="noopener noreferrer">{t("Ver proyecto ↗", "View project ↗")}</a>}</div></article>)}</div></section>
+<section id="experiencia" class="section-grid"><div class="section-heading"><p class="eyebrow">{t("02 / TRAYECTORIA", "02 / EXPERIENCE")}</p><h2>{t("Experiencia complementaria", "Additional experience")}<span class="accent">.</span></h2><p class="muted">{t("Experiencia, aprendizajes y aportes.", "Experience, learning and contributions.")}</p></div><div>{p.experiencia.map(job => <article class="job"><p class="period">{job.periodo}</p><h3>{job.cargo}</h3><p class="company">{job.empresa}</p><p class="muted">{job.descripcion}</p><div class="tags">{job.etiquetas.map(tag => <span>{tag}</span>)}</div></article>)}</div></section>
+<section id="formacion" class="section-grid"><div class="section-heading"><p class="eyebrow">{t("03 / APRENDIZAJE", "03 / EDUCATION")}</p><h2>{t("Una base para crecer", "A foundation for growth")}<span class="accent">.</span></h2></div><div>{p.formacion.map(item => <article class="study"><p class="period">{item.periodo}</p><h3>{item.titulo}</h3><p class="muted">{item.institucion}</p></article>)}<h3 class="skills-heading">{t("Herramientas & habilidades", "Tools & skills")}</h3><div class="tags">{p.habilidades.map(skill => <span>{skill}</span>)}</div></div></section>
+<section id="contacto" class="contact"><p class="eyebrow">{t("04 / SIGUIENTE PASO", "04 / NEXT STEP")}</p><h2>{t("Hablemos de", "Let’s talk about")}<br/>{t("lo que viene", "what comes next")}<span class="accent">.</span></h2><p class="muted">{p.contacto}</p>{email ? <a class="email" href={`mailto:${email}`}>{email} ↗</a> : null}<div class="socials">{[['GitHub',p.github],['LinkedIn',p.linkedin]].map(([label,url]) => safeURL(url) && <a href={safeURL(url)} target="_blank" rel="noopener noreferrer">{label} ↗</a>)}</div></section>
+<footer><div><span>© {new Date().getFullYear()} {p.nombre}</span><small class="template-credit">Template Folio made by Diego Lobos</small></div><a href="#inicio">{t("Volver arriba ↑", "Back to top ↑")}</a></footer>
+</main>
+<script>
+const themeButton = document.getElementById('theme');
+function syncTheme() { const dark = document.documentElement.dataset.theme === 'dark'; themeButton?.setAttribute('aria-label', document.documentElement.lang === 'en' ? `Enable ${dark ? 'light' : 'dark'} theme` : `Activar tema ${dark ? 'claro' : 'oscuro'}`); themeButton?.setAttribute('aria-pressed', String(dark)); }
+syncTheme();
+themeButton?.addEventListener('click', () => { const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = theme; try { localStorage.setItem('cv-astro-theme', theme); } catch {} syncTheme(); });
+document.getElementById('print')?.addEventListener('click', () => window.print());
+</script>
+</body>
+</html>
+
+
+

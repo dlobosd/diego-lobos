@@ -4,12 +4,12 @@ export const perfil = {
   "disponibilidad": "Desarrollo de software · Seguridad de aplicaciones",
   "ubicacion": "Santiago, Chile",
   "enfoque": "Software, automatización y ciberseguridad",
-  "idiomas": "Español nativo · Inglés avanzado",
-  "sobreMi": "Soy estudiante avanzado de Ingeniería Civil Informática en la Universidad Andrés Bello. Desarrollo aplicaciones de escritorio, sistemas de gestión y soluciones de visión computacional, con interés en ingeniería de software, automatización y ciberseguridad. Tengo experiencia colaborando en proyectos técnicos.",
-  "email": "",
+  "idiomas": "Español nativo · Inglés con fluidez profesional",
+  "sobreMi": "Soy estudiante de cuarto año de Ingeniería Civil Informática en la Universidad Andrés Bello. Desarrollo aplicaciones de escritorio, sistemas de gestión y soluciones de visión computacional, con interés en ingeniería de software, automatización y ciberseguridad. Tengo experiencia colaborando en proyectos técnicos.",
+  "email": "ceo@beelysports.com",
   "github": "https://github.com/dlobosd",
   "linkedin": "",
-  "contacto": "Puedes conocer mis proyectos públicos y mi trabajo en GitHub.",
+  "contacto": "Si tienes una oportunidad o un proyecto en mente, puedes escribirme o conocer mi trabajo en GitHub.",
   "experiencia": [
     {
       "periodo": "2025",
@@ -22,6 +22,16 @@ export const perfil = {
       ]
     },
     {
+      "periodo": "",
+      "cargo": "Ayudante de Cálculo I y II",
+      "empresa": "Ayudantías académicas",
+      "descripcion": "Apoyo a estudiantes de los cursos de Cálculo I y Cálculo II.",
+      "etiquetas": [
+        "Matemáticas",
+        "Apoyo académico"
+      ]
+    },
+    {
       "periodo": "2022",
       "cargo": "Guild Leader and Raid Officer",
       "empresa": "World of Warcraft · United States",
@@ -30,6 +40,15 @@ export const perfil = {
         "Liderazgo",
         "Coordinación de equipos",
         "Comunicación en inglés"
+      ]
+    },
+    {
+      "periodo": "2016",
+      "cargo": "Formación en inglés",
+      "empresa": "Instituto Británico de Cultura",
+      "descripcion": "Aprendizaje de inglés en el Instituto Británico de Cultura.",
+      "etiquetas": [
+        "Inglés"
       ]
     }
   ],
@@ -47,10 +66,11 @@ export const perfil = {
         "PostgreSQL",
         "Prisma"
       ],
-      "url": ""
+      "url": "",
+      "estado": "En construcción"
     },
     {
-      "nombre": "Minimarket Antucayen",
+      "nombre": "Supermercado Antucayen",
       "categoria": "GESTIÓN COMERCIAL · PROYECTO UNIVERSITARIO COLABORATIVO",
       "descripcion": "Sistema de escritorio con punto de venta, inventario transaccional, proveedores, facturación, OCR, reportes y permisos por rol. Desarrollado con Java, Swing/FlatLaf y MariaDB, con Maven y pruebas JUnit.",
       "tecnologias": [
@@ -60,7 +80,7 @@ export const perfil = {
         "Maven",
         "JUnit"
       ],
-      "url": ""
+      "url": "https://github.com/MatiasCODE788/Ingenieria-de-sofware-l"
     },
     {
       "nombre": "Folio",
@@ -82,7 +102,8 @@ export const perfil = {
       "tecnologias": [
         "Lua",
         "API de World of Warcraft",
-        "Eventos"
+        "Eventos",
+        "POO"
       ],
       "url": ""
     }
