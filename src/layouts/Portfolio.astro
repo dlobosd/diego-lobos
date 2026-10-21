@@ -1,12 +1,12 @@
 ---
 import { perfil } from '../data/perfil.js';
 import { perfilEn } from '../data/perfil.en.js';
+import '../styles/global.css';
 const { lang = 'es' } = Astro.props;
 const english = lang === 'en';
 const p = english ? perfilEn : perfil;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const t = (es, en) => english ? en : es;
-import '../styles/global.css';
 const safeURL = (value) => { try { const u = new URL(value); return ['https:', 'http:'].includes(u.protocol) ? u.href : null; } catch { return null; } };
 const email = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(p.email) ? p.email : null;
 const initials = p.nombre.trim().split(/\s+/).slice(0,2).map(word => word[0]).join('');
