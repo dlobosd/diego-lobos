@@ -6,7 +6,7 @@ export const perfil = {
   "enfoque": "Software, automatización y ciberseguridad",
   "idiomas": "Español nativo · Inglés con fluidez profesional",
   "sobreMi": "Soy estudiante de cuarto año de Ingeniería Civil Informática en la Universidad Andrés Bello. Desarrollo aplicaciones de escritorio, sistemas de gestión y soluciones de visión computacional, con interés en ingeniería de software, automatización y ciberseguridad. Tengo experiencia colaborando en proyectos técnicos.",
-  "email": "ceo@beelysports.com",
+  "email": "d.lobosdaz@uandresbello.edu",
   "github": "https://github.com/dlobosd",
   "linkedin": "",
   "contacto": "Si tienes una oportunidad o un proyecto en mente, puedes escribirme o conocer mi trabajo en GitHub.",
