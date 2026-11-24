@@ -69,18 +69,14 @@ export const perfilEn = {
       "url": "",
       "estado": "Under construction"
     },
-    {
-      "nombre": "Supermercado Antucayen",
-      "categoria": "RETAIL MANAGEMENT · COLLABORATIVE UNIVERSITY PROJECT",
-      "descripcion": "Desktop system with a point of sale, transactional inventory, suppliers, invoicing, OCR, reports and role-based permissions. Built with Java, Swing/FlatLaf and MariaDB, using Maven and JUnit tests.",
-      "tecnologias": [
-        "Java",
-        "Swing / FlatLaf",
-        "MariaDB",
-        "Maven",
-        "JUnit"
-      ],
-      "url": "https://github.com/MatiasCODE788/Ingenieria-de-sofware-l"
+        {
+      "nombre": "Supermercado Antucayen — Retail Analytics",
+      "categoria": "POWER BI · BUSINESS INTELLIGENCE",
+      "descripcion": "Interactive dashboard for analyzing sales performance, product contribution and inventory. Highlights ABC/Pareto rankings, year-over-year changes and products with no recent sales.",
+      "tecnologias": ["Power BI", "DAX", "Power Query (M)", "SQL", "Python"],
+      "imagen": "antucayen-powerbi.svg",
+      "url": "/proyectos/antucayen/",
+      "enlaceTexto": "View project ↗"
     },
     {
       "nombre": "Folio",
@@ -95,19 +91,7 @@ export const perfilEn = {
       ],
       "url": "https://github.com/dlobosd/folio"
     },
-    {
-      "nombre": "World of Warcraft Addons",
-      "categoria": "PERSONAL PROJECTS · 2021–2024",
-      "descripcion": "Development of Lua addons using the World of Warcraft API, event-driven logic and in-game tools. I also publish my addons on CurseForge.",
-      "tecnologias": [
-        "Lua",
-        "World of Warcraft API",
-        "Events",
-        "OOP"
-      ],
-      "url": "https://www.curseforge.com/wow/addons/combat-analizer/preview",
-      "enlaceTexto": "View addons ↗"
-    }
+    
   ],
   "formacion": [
     {
@@ -145,6 +129,7 @@ export const perfilEn = {
     "Git/GitHub",
     "Docker",
     "Pandas",
-    "Claude Code"
+    "Claude Code",
+    "Power BI"
   ]
 };
