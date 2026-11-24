@@ -130,6 +130,8 @@ export const perfil = {
     "Docker",
     "Pandas",
     "Claude Code",
-    "Power BI"
+    "Power BI",
+    "DAX",
+    "Power Query (M)"
   ]
 };
