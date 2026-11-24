@@ -69,18 +69,14 @@ export const perfil = {
       "url": "",
       "estado": "En construcción"
     },
-    {
-      "nombre": "Supermercado Antucayen",
-      "categoria": "GESTIÓN COMERCIAL · PROYECTO UNIVERSITARIO COLABORATIVO",
-      "descripcion": "Sistema de escritorio con punto de venta, inventario transaccional, proveedores, facturación, OCR, reportes y permisos por rol. Desarrollado con Java, Swing/FlatLaf y MariaDB, con Maven y pruebas JUnit.",
-      "tecnologias": [
-        "Java",
-        "Swing / FlatLaf",
-        "MariaDB",
-        "Maven",
-        "JUnit"
-      ],
-      "url": "https://github.com/MatiasCODE788/Ingenieria-de-sofware-l"
+        {
+      "nombre": "Supermercado Antucayen — Ventas e Inventario",
+      "categoria": "POWER BI · INTELIGENCIA DE NEGOCIOS",
+      "descripcion": "Dashboard interactivo para analizar ventas, contribución de productos e inventario. Incluye clasificación ABC con Pareto, variación interanual y detección de productos sin venta reciente.",
+      "tecnologias": ["Power BI", "DAX", "Power Query (M)", "SQL", "Python"],
+      "imagen": "antucayen-powerbi.svg",
+      "url": "/proyectos/antucayen/",
+      "enlaceTexto": "Ver proyecto ↗"
     },
     {
       "nombre": "Folio",
@@ -95,19 +91,7 @@ export const perfil = {
       ],
       "url": "https://github.com/dlobosd/folio"
     },
-    {
-      "nombre": "World of Warcraft Addons",
-      "categoria": "PROYECTOS PERSONALES · 2021–2024",
-      "descripcion": "Desarrollo de addons en Lua usando la API de World of Warcraft, lógica orientada a eventos y herramientas para el juego. También publico mis addons en CurseForge.",
-      "tecnologias": [
-        "Lua",
-        "API de World of Warcraft",
-        "Eventos",
-        "POO"
-      ],
-      "url": "https://www.curseforge.com/wow/addons/combat-analizer/preview",
-      "enlaceTexto": "Ver addons ↗"
-    }
+    
   ],
   "formacion": [
     {
@@ -145,6 +129,7 @@ export const perfil = {
     "Git/GitHub",
     "Docker",
     "Pandas",
-    "Claude Code"
+    "Claude Code",
+    "Power BI"
   ]
 };
