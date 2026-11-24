@@ -54,6 +54,34 @@ export const perfil = {
   ],
   "proyectos": [
     {
+      "nombre": "Dashboard Supermercado Antucayen",
+      "categoria": "POWER BI · INTELIGENCIA DE NEGOCIOS",
+      "descripcion": "Dashboard interactivo para analizar ventas, contribución de productos e inventario. Incluye clasificación ABC con Pareto, variación interanual y detección de productos sin venta reciente.",
+      "tecnologias": [
+        "Power BI",
+        "DAX",
+        "Power Query (M)",
+        "SQL",
+        "Python"
+      ],
+      "imagen": "antucayen-powerbi.svg",
+      "url": "/proyectos/antucayen/",
+      "enlaceTexto": "Ver proyecto ↗"
+    },
+    {
+      "nombre": "Sistema de Gestión — Supermercado Antucayen",
+      "categoria": "GESTIÓN COMERCIAL · PROYECTO UNIVERSITARIO COLABORATIVO",
+      "descripcion": "Sistema de escritorio con punto de venta, inventario transaccional, proveedores, facturación, OCR, reportes y permisos por rol. Desarrollado con Java, Swing/FlatLaf y MariaDB, con Maven y pruebas JUnit.",
+      "tecnologias": [
+        "Java",
+        "Swing / FlatLaf",
+        "MariaDB",
+        "Maven",
+        "JUnit"
+      ],
+      "url": "https://github.com/MatiasCODE788/Ingenieria-de-sofware-l"
+    },
+    {
       "nombre": "Beely",
       "categoria": "TECNOLOGÍA DEPORTIVA · 2026 · CÓDIGO PRIVADO",
       "descripcion": "Aplicación de escritorio para gestionar rendimiento, entrenamientos, cargas, tendencias, jugadores y análisis de partidos. Pipeline de visión computacional en Python para tracking, identidad de futbolistas y un motor experimental de eventos. Incluye autenticación y permisos por rol (RBAC).",
@@ -69,15 +97,6 @@ export const perfil = {
       "url": "",
       "estado": "En construcción"
     },
-        {
-      "nombre": "Supermercado Antucayen — Ventas e Inventario",
-      "categoria": "POWER BI · INTELIGENCIA DE NEGOCIOS",
-      "descripcion": "Dashboard interactivo para analizar ventas, contribución de productos e inventario. Incluye clasificación ABC con Pareto, variación interanual y detección de productos sin venta reciente.",
-      "tecnologias": ["Power BI", "DAX", "Power Query (M)", "SQL", "Python"],
-      "imagen": "antucayen-powerbi.svg",
-      "url": "/proyectos/antucayen/",
-      "enlaceTexto": "Ver proyecto ↗"
-    },
     {
       "nombre": "Folio",
       "categoria": "PLANTILLA GRATUITA · 2026",
@@ -90,8 +109,7 @@ export const perfil = {
         "GitHub Pages"
       ],
       "url": "https://github.com/dlobosd/folio"
-    },
-    
+    }
   ],
   "formacion": [
     {
