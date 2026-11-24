@@ -54,6 +54,34 @@ export const perfilEn = {
   ],
   "proyectos": [
     {
+      "nombre": "Supermercado Antucayen Dashboard",
+      "categoria": "POWER BI · BUSINESS INTELLIGENCE",
+      "descripcion": "Interactive dashboard for analyzing sales performance, product contribution and inventory. Highlights ABC/Pareto rankings, year-over-year changes and products with no recent sales.",
+      "tecnologias": [
+        "Power BI",
+        "DAX",
+        "Power Query (M)",
+        "SQL",
+        "Python"
+      ],
+      "imagen": "antucayen-powerbi.svg",
+      "url": "/proyectos/antucayen/",
+      "enlaceTexto": "View project ↗"
+    },
+    {
+      "nombre": "Supermercado Antucayen Management System",
+      "categoria": "RETAIL MANAGEMENT · COLLABORATIVE UNIVERSITY PROJECT",
+      "descripcion": "Desktop management system with a point of sale, transactional inventory, suppliers, invoicing, OCR, reports and role-based permissions. Built with Java, Swing/FlatLaf and MariaDB, using Maven and JUnit tests.",
+      "tecnologias": [
+        "Java",
+        "Swing / FlatLaf",
+        "MariaDB",
+        "Maven",
+        "JUnit"
+      ],
+      "url": "https://github.com/MatiasCODE788/Ingenieria-de-sofware-l"
+    },
+    {
       "nombre": "Beely",
       "categoria": "SPORTS TECHNOLOGY · 2026 · PRIVATE SOURCE CODE",
       "descripcion": "Desktop application for managing player performance, training, workloads, trends and match analysis. A Python computer vision pipeline handles player tracking and identity, with an experimental event engine. Includes authentication and role-based access control (RBAC).",
@@ -69,15 +97,6 @@ export const perfilEn = {
       "url": "",
       "estado": "Under construction"
     },
-        {
-      "nombre": "Supermercado Antucayen — Retail Analytics",
-      "categoria": "POWER BI · BUSINESS INTELLIGENCE",
-      "descripcion": "Interactive dashboard for analyzing sales performance, product contribution and inventory. Highlights ABC/Pareto rankings, year-over-year changes and products with no recent sales.",
-      "tecnologias": ["Power BI", "DAX", "Power Query (M)", "SQL", "Python"],
-      "imagen": "antucayen-powerbi.svg",
-      "url": "/proyectos/antucayen/",
-      "enlaceTexto": "View project ↗"
-    },
     {
       "nombre": "Folio",
       "categoria": "FREE TEMPLATE · 2026",
@@ -90,8 +109,7 @@ export const perfilEn = {
         "GitHub Pages"
       ],
       "url": "https://github.com/dlobosd/folio"
-    },
-    
+    }
   ],
   "formacion": [
     {
